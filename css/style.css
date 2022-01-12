@@ -1,0 +1,1161 @@
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-list .contact-item .adress {
+  font-size: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  font-weight: bold;
+}
+
+.contact-list .contact-item .adress .icon {
+  color: #333333;
+  font-size: 32px;
+  margin-right: 32px;
+}
+
+.contact-list .contact-item + .contact-item {
+  margin-top: 20px;
+}
+
+.img-container .hov {
+  position: relative;
+  display: block;
+}
+
+.img-container .hov .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.img-container .hov .cover-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.img-container .hov .cover-bg:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.img-container .hov .cover-bg:hover p {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.img-container .hov .cover-bg p {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 95px;
+  -webkit-transition: all ease-in 0.1s;
+  transition: all ease-in 0.1s;
+}
+
+@media (max-width: 768px) {
+  .img-container .hov .cover-bg p {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 375px) {
+  .img-container .hov .cover-bg p {
+    font-size: 21px;
+  }
+}
+
+.download {
+  margin-top: 59px;
+}
+
+.download .dl-head {
+  font-size: 28px;
+  letter-spacing: 2.24px;
+  margin: 0;
+  text-align: center;
+}
+
+.download .os-list {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.download .os-list .os-item {
+  margin-right: 63px;
+}
+
+.download .os-list .os-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 190px;
+  height: 67px;
+  border: 3px solid #333;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+}
+
+.download .os-list .os-item a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.download .os-list .os-item:last-of-type {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .download .os-list .os-item {
+    margin-right: 98px;
+  }
+  .download .os-list .os-item + .os-item {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .download .os-list .os-item {
+    margin-right: 37px;
+  }
+  .download .os-list .os-item + .os-item {
+    margin-right: 0;
+  }
+}
+
+.topic-path .topic-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topic-path .topic-list .topic-item a {
+  font-size: 21px;
+  color: #707070;
+  opacity: 0.6;
+}
+
+.topic-path .topic-list .topic-item a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .topic-path .topic-list .topic-item a {
+    font-size: 14px;
+  }
+}
+
+.topic-path .topic-list .topic-item + .topic-item::before {
+  content: '>';
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  width: 28px;
+}
+
+@media (max-width: 768px) {
+  .topic-path .topic-list .topic-item + .topic-item::before {
+    font-size: 14px;
+  }
+}
+
+.topic-path .topic-list .topic-item:last-of-type a {
+  cursor: initial;
+  opacity: 1;
+  color: inherit;
+}
+
+.copylight {
+  text-align: center;
+  font-size: 21px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+}
+
+body #page_top {
+  position: fixed;
+  bottom: 70px;
+  right: 15%;
+}
+
+body #page_top a {
+  font-size: 100px;
+  opacity: 0.4;
+}
+
+body #page_top a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  body #page_top a {
+    font-size: 0;
+  }
+}
+
+body .home-wrapper {
+  padding: 38px 20% 0;
+}
+
+@media (max-width: 768px) {
+  body .home-wrapper {
+    padding: 42px 10% 0;
+  }
+}
+
+@media (max-width: 375px) {
+  body .home-wrapper {
+    padding: 27px 7.5% 0;
+  }
+}
+
+body .contact-wrapper {
+  padding: 42px 25% 0;
+}
+
+@media (max-width: 768px) {
+  body .contact-wrapper {
+    padding: 32px 10% 0;
+  }
+}
+
+@media (max-width: 375px) {
+  body .contact-wrapper {
+    padding: 19px 7.5% 0;
+  }
+}
+
+body .be-immortal-wrapper, body .em-daybreak-wrapper {
+  padding: 42px 20% 0;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  body .be-immortal-wrapper, body .em-daybreak-wrapper {
+    padding: 32px 10% 0;
+  }
+}
+
+@media (max-width: 375px) {
+  body .be-immortal-wrapper, body .em-daybreak-wrapper {
+    padding: 19px 7.5% 0;
+  }
+}
+
+body .em-daybreak-wrapper {
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#1928A0), to(#ED3A1A)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #1928A0 0%, #ED3A1A 100%) 0% 0% no-repeat padding-box;
+}
+
+body .header .head .title {
+  font-size: 63px;
+  letter-spacing: 12.6px;
+  margin: 0;
+  font-weight: normal;
+}
+
+body .header .head .nav .nav-list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+
+body .header .head .nav .nav-list .nav-item {
+  font-size: 28px;
+  margin-right: 61px;
+  opacity: 0.5;
+}
+
+body .header .head .nav .nav-list .nav-item:last-of-type {
+  margin-right: 0;
+}
+
+body .header .head .nav .nav-list .nav-item:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  body .header .head .title {
+    font-size: 35px;
+    letter-spacing: 7px;
+  }
+  body .header .head .nav .nav-list {
+    margin-top: 31px;
+  }
+  body .header .head .nav .nav-list .nav-item {
+    font-size: 21px;
+    margin-right: 39px;
+  }
+}
+
+@media (max-width: 375px) {
+  body .header .head .title {
+    font-size: 21px;
+    letter-spacing: 4.2px;
+  }
+  body .header .head .nav .nav-list {
+    margin-top: 22px;
+  }
+  body .header .head .nav .nav-list .nav-item {
+    font-size: 14px;
+    margin-right: 36px;
+  }
+}
+
+body .header .contact .title, body .header .be-immortal .title, body .header .em-daybreak .title {
+  font-size: 21px;
+  letter-spacing: 4.2px;
+  opacity: 0.6;
+}
+
+body .header .contact .title:hover, body .header .be-immortal .title:hover, body .header .em-daybreak .title:hover {
+  opacity: 1;
+}
+
+body .header .contact .sub-title, body .header .be-immortal .sub-title, body .header .em-daybreak .sub-title, body .header .be-immortal .nav-list, body .header .em-daybreak .nav-list {
+  font-size: 63px;
+  letter-spacing: 3.15px;
+  font-weight: bold;
+  margin-top: 22px;
+  margin-bottom: 54px;
+}
+
+@media (max-width: 768px) {
+  body .header .contact .title, body .header .be-immortal .title, body .header .em-daybreak .title {
+    text-align: center;
+    font-size: 35px;
+  }
+  body .header .contact .sub-title, body .header .be-immortal .sub-title, body .header .em-daybreak .sub-title, body .header .be-immortal .nav-list, body .header .em-daybreak .nav-list {
+    font-size: 42px;
+    margin-top: 52px;
+    margin-bottom: 0;
+  }
+  body .header .contact .contact-list, body .header .be-immortal .contact-list, body .header .em-daybreak .contact-list {
+    height: 287px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .header .contact .contact-list .contact-item .adress .icon, body .header .be-immortal .contact-list .contact-item .adress .icon, body .header .em-daybreak .contact-list .contact-item .adress .icon {
+    font-size: 17px;
+  }
+  body .header .contact .contact-list .contact-item + .contact-item, body .header .be-immortal .contact-list .contact-item + .contact-item, body .header .em-daybreak .contact-list .contact-item + .contact-item {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  body .header .contact .title, body .header .be-immortal .title, body .header .em-daybreak .title {
+    font-size: 21px;
+  }
+  body .header .contact .sub-title, body .header .be-immortal .sub-title, body .header .em-daybreak .sub-title, body .header .be-immortal .nav-list, body .header .em-daybreak .nav-list {
+    font-size: 28px;
+    margin-top: 29px;
+  }
+  body .header .contact .contact-list, body .header .be-immortal .contact-list, body .header .em-daybreak .contact-list {
+    height: 184px;
+  }
+  body .header .contact .contact-list .contact-item .adress, body .header .be-immortal .contact-list .contact-item .adress, body .header .em-daybreak .contact-list .contact-item .adress {
+    font-size: 14px;
+  }
+  body .header .contact .contact-list .contact-item .adress .icon, body .header .be-immortal .contact-list .contact-item .adress .icon, body .header .em-daybreak .contact-list .contact-item .adress .icon {
+    margin-right: 10px;
+  }
+}
+
+body .header .be-immortal, body .header .em-daybreak, body .header .main .container .em-daybreak, body .main .container .header .em-daybreak {
+  margin: 0 7%;
+}
+
+body .header .be-immortal .title, body .header .em-daybreak .title {
+  display: inline-block;
+}
+
+body .header .be-immortal .nav-list, body .header .em-daybreak .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+}
+
+body .header .be-immortal .nav-list .sub-title, body .header .em-daybreak .nav-list .sub-title, body .header .be-immortal .nav-list .nav-list, body .header .em-daybreak .nav-list .nav-list {
+  margin-bottom: 0;
+}
+
+body .header .be-immortal .nav-list .works-list, body .header .em-daybreak .nav-list .works-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .header .be-immortal .nav-list .works-list .work-item a, body .header .em-daybreak .nav-list .works-list .work-item a {
+  font-size: 21px;
+  padding: 0 10px;
+  opacity: 0.4;
+}
+
+body .header .be-immortal .nav-list .works-list .work-item a:hover, body .header .em-daybreak .nav-list .works-list .work-item a:hover {
+  opacity: 1;
+}
+
+body .header .be-immortal .nav-list .works-list .work-item + .work-item, body .header .em-daybreak .nav-list .works-list .work-item + .work-item {
+  margin-left: 40px;
+}
+
+body .header .be-immortal .nav-list .works-list .active a, body .header .em-daybreak .nav-list .works-list .active a {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  body .header .be-immortal, body .header .em-daybreak, body .header .main .container .em-daybreak, body .main .container .header .em-daybreak {
+    margin: 0;
+    text-align: center;
+  }
+  body .header .be-immortal .title, body .header .em-daybreak .title {
+    font-size: 35px;
+  }
+  body .header .be-immortal .nav-list, body .header .em-daybreak .nav-list {
+    display: block;
+  }
+  body .header .be-immortal .nav-list .sub-title, body .header .em-daybreak .nav-list .sub-title, body .header .be-immortal .nav-list .nav-list, body .header .em-daybreak .nav-list .nav-list {
+    text-align: left;
+    margin-top: 49px;
+    font-size: 42px;
+  }
+  body .header .be-immortal .nav-list .works-list, body .header .em-daybreak .nav-list .works-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 52px;
+  }
+  body .header .be-immortal .nav-list .works-list .work-item a, body .header .em-daybreak .nav-list .works-list .work-item a {
+    line-height: auto;
+  }
+  body .header .be-immortal .nav-list .works-list .work-item + .works-item, body .header .em-daybreak .nav-list .works-list .work-item + .works-item {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 375px) {
+  body .header .be-immortal .title, body .header .em-daybreak .title {
+    font-size: 21px;
+  }
+  body .header .be-immortal .nav-list .sub-title, body .header .em-daybreak .nav-list .sub-title, body .header .be-immortal .nav-list .nav-list, body .header .em-daybreak .nav-list .nav-list {
+    margin-top: 29px;
+    font-size: 28px;
+  }
+  body .header .be-immortal .nav-list .works-list, body .header .em-daybreak .nav-list .works-list {
+    margin-top: 33px;
+  }
+  body .header .be-immortal .nav-list .works-list .work-item a, body .header .em-daybreak .nav-list .works-list .work-item a {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  body .header .be-immortal .nav-list .works-list .work-item + .work-item, body .header .em-daybreak .nav-list .works-list .work-item + .work-item {
+    margin-left: 50px;
+  }
+}
+
+body .main .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 778px;
+}
+
+body .main .top .top-title {
+  margin: 0;
+  font-size: 70px;
+  letter-spacing: 21px;
+}
+
+body .main .container .be-immortal, body .main .container .em-daybreak {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 376px;
+}
+
+body .main .container .be-immortal .description, body .main .container .em-daybreak .description {
+  margin: auto 131px;
+}
+
+body .main .container .be-immortal .description .game-title, body .main .container .em-daybreak .description .game-title {
+  font-size: 49px;
+  letter-spacing: 3.92px;
+  margin: 0;
+  margin-top: 63px;
+}
+
+body .main .container .be-immortal .description .game-lead, body .main .container .em-daybreak .description .game-lead, body .main .container .be-immortal .description .more a, body .main .container .em-daybreak .description .more a {
+  font-size: 21px;
+  /* letter-spacing: 1.03px*$prs; */
+  color: #707070;
+  margin: 0;
+  margin-top: 14px;
+}
+
+body .main .container .be-immortal .description .more, body .main .container .em-daybreak .description .more {
+  float: right;
+}
+
+body .main .container .be-immortal .description .more a, body .main .container .em-daybreak .description .more a {
+  color: #333;
+  font-weight: bold;
+  padding: 11px 17px;
+  position: relative;
+}
+
+body .main .container .be-immortal .description .more a:hover, body .main .container .em-daybreak .description .more a:hover {
+  -webkit-transition: all linear 0.1s;
+  transition: all linear 0.1s;
+  color: #fff;
+}
+
+body .main .container .be-immortal .description .more a:hover::before, body .main .container .em-daybreak .description .more a:hover::before {
+  -webkit-transition: width ease-in-out 0.3s;
+  transition: width ease-in-out 0.3s;
+  width: 100%;
+}
+
+body .main .container .be-immortal .description .more a::before, body .main .container .em-daybreak .description .more a::before {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #333;
+}
+
+body .main .container .em-daybreak {
+  margin-bottom: 0;
+}
+
+body .main .container .em-daybreak .hov .grd {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent linear-gradient(61deg, #A34014 0%, #330C8D 100%) 0% 0% no-repeat padding-box;
+}
+
+@media (max-width: 768px) {
+  body .main .top {
+    height: 868px;
+  }
+  body .main .top .top-title {
+    font-size: 77px;
+    letter-spacing: 23px;
+    font-weight: normal;
+    margin-left: 62px;
+  }
+  body .main .top .top-title .ui {
+    font-weight: bold;
+  }
+  body .main .container .be-immortal, body .main .container .em-daybreak {
+    margin-bottom: 300px;
+  }
+  body .main .container .be-immortal .description, body .main .container .em-daybreak .description {
+    margin: auto 8%;
+  }
+  body .main .container .be-immortal .description .game-title, body .main .container .em-daybreak .description .game-title {
+    font-size: 35px;
+    letter-spacing: 1.72px;
+  }
+  body .main .container .be-immortal .description .game-lead, body .main .container .em-daybreak .description .game-lead, body .main .container .be-immortal .description .more a, body .main .container .em-daybreak .description .more a {
+    letter-spacing: 0.59px;
+  }
+  body .main .container .be-immortal .description .more a, body .main .container .em-daybreak .description .more a {
+    letter-spacing: 1.03px;
+  }
+  body .main .container .be-immortal .download .dl-head, body .main .container .em-daybreak .download .dl-head {
+    font-size: 28px;
+  }
+  body .main .container .be-immortal .download .os-list, body .main .container .em-daybreak .download .os-list {
+    margin-top: 28px;
+  }
+  body .main .container .be-immortal .download .os-list .os-item a, body .main .container .em-daybreak .download .os-list .os-item a {
+    width: 148px;
+    height: 54px;
+    font-size: 21px;
+    letter-spacing: 1.05px;
+  }
+}
+
+@media (max-width: 375px) {
+  body .main .top {
+    height: 570px;
+  }
+  body .main .top .top-title {
+    font-size: 40px;
+    letter-spacing: 14.7px;
+    margin-left: 26px;
+  }
+  body .main .container .be-immortal, body .main .container .em-daybreak {
+    margin-bottom: 190px;
+  }
+  body .main .container .be-immortal .description .game-title, body .main .container .em-daybreak .description .game-title {
+    margin-top: 25px;
+    font-size: 28px;
+    letter-spacing: 1.37px;
+  }
+  body .main .container .be-immortal .description .game-lead, body .main .container .em-daybreak .description .game-lead, body .main .container .be-immortal .description .more a, body .main .container .em-daybreak .description .more a {
+    font-size: 14px;
+    letter-spacing: 0.39px;
+  }
+  body .main .container .be-immortal .description .more a, body .main .container .em-daybreak .description .more a {
+    letter-spacing: 0.69px;
+  }
+  body .main .container .be-immortal .download .dl-head, body .main .container .em-daybreak .download .dl-head {
+    font-size: 14px;
+  }
+  body .main .container .be-immortal .download .os-list, body .main .container .em-daybreak .download .os-list {
+    margin-top: 21px;
+  }
+  body .main .container .be-immortal .download .os-list .os-item a, body .main .container .em-daybreak .download .os-list .os-item a {
+    width: 120px;
+    height: 44px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+  }
+}
+
+body .main .contact-page {
+  padding-top: 140px;
+}
+
+body .main .contact-page .designer, body .main .contact-page .programmer {
+  height: 297px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main .contact-page .designer .pos, body .main .contact-page .programmer .pos {
+  width: 273px;
+  font-size: 28px;
+  letter-spacing: 1.37px;
+  margin: 0;
+}
+
+body .main .contact-page .designer .info .name, body .main .contact-page .programmer .info .name {
+  font-size: 28px;
+  letter-spacing: 1.37px;
+  margin: 0;
+}
+
+body .main .contact-page .designer .info .adress-container, body .main .contact-page .programmer .info .adress-container {
+  height: 80%;
+  display: table;
+}
+
+body .main .contact-page .designer .info .adress-container .contact-list, body .main .contact-page .programmer .info .adress-container .contact-list {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  body .main .contact-page {
+    padding-top: 0;
+  }
+  body .main .contact-page .designer, body .main .contact-page .programmer {
+    display: block;
+    height: auto;
+  }
+  body .main .contact-page .designer .pos, body .main .contact-page .programmer .pos {
+    margin-bottom: 7px;
+    font-weight: normal;
+  }
+  body .main .contact-page .designer .info, body .main .contact-page .programmer .info {
+    height: 330px;
+  }
+  body .main .contact-page .designer .info .name, body .main .contact-page .programmer .info .name {
+    font-size: 35px;
+    font-weight: normal;
+  }
+  body .main .contact-page .designer .info .adress-container, body .main .contact-page .programmer .info .adress-container {
+    height: 80%;
+    margin: 0 auto;
+  }
+  body .main .contact-page .designer .info .adress-container .contact-list .contact-item .adress .icon, body .main .contact-page .programmer .info .adress-container .contact-list .contact-item .adress .icon {
+    font-size: 17px;
+    margin-right: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  body .main .contact-page .designer .pos, body .main .contact-page .programmer .pos {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  body .main .contact-page .designer .info, body .main .contact-page .programmer .info {
+    height: 182px;
+  }
+  body .main .contact-page .designer .info .name, body .main .contact-page .programmer .info .name {
+    font-size: 21px;
+  }
+  body .main .contact-page .designer .info .adress-container .contact-list .contact-item .adress, body .main .contact-page .programmer .info .adress-container .contact-list .contact-item .adress {
+    font-size: 14px;
+  }
+  body .main .contact-page .designer .info .adress-container .contact-list .contact-item .adress .icon, body .main .contact-page .programmer .info .adress-container .contact-list .contact-item .adress .icon {
+    margin-right: 10px;
+  }
+}
+
+body .main .be-immortal-page, body .main .em-daybreak-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .be-immortal-page .work-title, body .main .em-daybreak-page .work-title {
+  font-size: 49px;
+  letter-spacing: 3.92px;
+}
+
+body .main .be-immortal-page .description .sub-title, body .main .em-daybreak-page .description .sub-title, body .main .be-immortal-page .description .header .be-immortal .nav-list, body .header .be-immortal .main .be-immortal-page .description .nav-list, body .main .em-daybreak-page .description .header .be-immortal .nav-list, body .header .be-immortal .main .em-daybreak-page .description .nav-list, body .main .be-immortal-page .description .header .em-daybreak .nav-list, body .header .em-daybreak .main .be-immortal-page .description .nav-list, body .main .em-daybreak-page .description .header .em-daybreak .nav-list, body .header .em-daybreak .main .em-daybreak-page .description .nav-list {
+  font-size: 63px;
+  letter-spacing: 5.04px;
+}
+
+body .main .be-immortal-page .description p, body .main .em-daybreak-page .description p {
+  font-size: 21px;
+  letter-spacing: 1.03px;
+  color: #C8C8C8;
+  font-weight: normal;
+}
+
+body .main .be-immortal-page .description p + p, body .main .em-daybreak-page .description p + p {
+  margin-top: 34.5px;
+}
+
+body .main .be-immortal-page .overview, body .main .em-daybreak-page .overview {
+  color: #C8C8C8;
+  display: block;
+  width: 100%;
+}
+
+body .main .be-immortal-page .overview .ov-list, body .main .em-daybreak-page .overview .ov-list {
+  display: block;
+  text-align: center;
+}
+
+body .main .be-immortal-page .overview .ov-list .ov-item, body .main .em-daybreak-page .overview .ov-list .ov-item {
+  display: inline-block;
+  width: 15%;
+}
+
+body .main .be-immortal-page .overview .ov-list .ov-item .type, body .main .em-daybreak-page .overview .ov-list .ov-item .type {
+  font-size: 14px;
+  letter-spacing: 1.12px;
+}
+
+body .main .be-immortal-page .overview .ov-list .ov-item .icon, body .main .em-daybreak-page .overview .ov-list .ov-item .icon {
+  height: 40px;
+}
+
+body .main .be-immortal-page .overview .ov-list .ov-item .icon .p, body .main .em-daybreak-page .overview .ov-list .ov-item .icon .p {
+  display: block;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 0;
+}
+
+body .main .be-immortal-page .overview .ov-list .ov-item + .ov-item .icon, body .main .em-daybreak-page .overview .ov-list .ov-item + .ov-item .icon {
+  border-left: 1px solid #f0f0f0;
+}
+
+body .main .be-immortal-page .overview .download, body .main .em-daybreak-page .overview .download {
+  color: #f0f0f0f0;
+}
+
+body .main .be-immortal-page .overview .download .os-list .os-item a, body .main .em-daybreak-page .overview .download .os-list .os-item a {
+  border: 3px solid #f0f0f0;
+}
+
+body .main .be-immortal-page .overview .download .os-list .os-item a:hover, body .main .em-daybreak-page .overview .download .os-list .os-item a:hover {
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  body .main .be-immortal-page .work-title, body .main .em-daybreak-page .work-title {
+    margin-top: 154px;
+    margin-bottom: 40px;
+    font-size: 42px;
+  }
+  body .main .be-immortal-page .description .sub-title, body .main .em-daybreak-page .description .sub-title, body .main .be-immortal-page .description .header .be-immortal .nav-list, body .header .be-immortal .main .be-immortal-page .description .nav-list, body .main .em-daybreak-page .description .header .be-immortal .nav-list, body .header .be-immortal .main .em-daybreak-page .description .nav-list, body .main .be-immortal-page .description .header .em-daybreak .nav-list, body .header .em-daybreak .main .be-immortal-page .description .nav-list, body .main .em-daybreak-page .description .header .em-daybreak .nav-list, body .header .em-daybreak .main .em-daybreak-page .description .nav-list {
+    margin-top: 150px;
+    margin-bottom: 82px;
+    font-size: 42px;
+    font-weight: normal;
+  }
+  body .main .be-immortal-page .description p, body .main .em-daybreak-page .description p {
+    font-size: 21px;
+    font-weight: lighter;
+  }
+  body .main .be-immortal-page .description p + p, body .main .em-daybreak-page .description p + p {
+    margin-top: 34px;
+  }
+  body .main .be-immortal-page .overview, body .main .em-daybreak-page .overview {
+    margin-top: 154px;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item, body .main .em-daybreak-page .overview .ov-list .ov-item {
+    width: 18.5%;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item .type, body .main .em-daybreak-page .overview .ov-list .ov-item .type {
+    white-space: nowrap;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item .icon, body .main .em-daybreak-page .overview .ov-list .ov-item .icon {
+    height: 45px;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item .icon .p, body .main .em-daybreak-page .overview .ov-list .ov-item .icon .p {
+    font-size: 42px;
+    line-height: 45px;
+  }
+  body .main .be-immortal-page .overview .download, body .main .em-daybreak-page .overview .download {
+    margin-top: 155px;
+  }
+  body .main .be-immortal-page .overview .download .os-list, body .main .em-daybreak-page .overview .download .os-list {
+    margin-top: 28px;
+  }
+  body .main .be-immortal-page .overview .download .os-list .os-item a, body .main .em-daybreak-page .overview .download .os-list .os-item a {
+    width: 148px;
+    height: 54px;
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 375px) {
+  body .main .be-immortal-page .work-title, body .main .em-daybreak-page .work-title {
+    margin-top: 112px;
+    margin-bottom: 34px;
+    font-size: 28px;
+    font-weight: normal;
+  }
+  body .main .be-immortal-page .description .sub-title, body .main .em-daybreak-page .description .sub-title, body .main .be-immortal-page .description .header .be-immortal .nav-list, body .header .be-immortal .main .be-immortal-page .description .nav-list, body .main .em-daybreak-page .description .header .be-immortal .nav-list, body .header .be-immortal .main .em-daybreak-page .description .nav-list, body .main .be-immortal-page .description .header .em-daybreak .nav-list, body .header .em-daybreak .main .be-immortal-page .description .nav-list, body .main .em-daybreak-page .description .header .em-daybreak .nav-list, body .header .em-daybreak .main .em-daybreak-page .description .nav-list {
+    margin-top: 75px;
+    margin-bottom: 33px;
+    font-size: 26px;
+    letter-spacing: 2.08px;
+  }
+  body .main .be-immortal-page .description p, body .main .em-daybreak-page .description p {
+    font-size: 14px;
+  }
+  body .main .be-immortal-page .description p + p, body .main .em-daybreak-page .description p + p {
+    margin-top: 21px;
+  }
+  body .main .be-immortal-page .overview, body .main .em-daybreak-page .overview {
+    margin-top: 136px;
+  }
+  body .main .be-immortal-page .overview .ov-list, body .main .em-daybreak-page .overview .ov-list {
+    display: block;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item, body .main .em-daybreak-page .overview .ov-list .ov-item {
+    display: inline-block;
+    width: 30%;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item:nth-of-type(4), body .main .em-daybreak-page .overview .ov-list .ov-item:nth-of-type(4), body .main .be-immortal-page .overview .ov-list .ov-item:nth-of-type(5), body .main .em-daybreak-page .overview .ov-list .ov-item:nth-of-type(5) {
+    width: 40%;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item:nth-of-type(4) .icon, body .main .em-daybreak-page .overview .ov-list .ov-item:nth-of-type(4) .icon {
+    border-left: none;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item .icon, body .main .em-daybreak-page .overview .ov-list .ov-item .icon {
+    height: 50px;
+  }
+  body .main .be-immortal-page .overview .ov-list .ov-item .icon .p, body .main .em-daybreak-page .overview .ov-list .ov-item .icon .p {
+    line-height: 50px;
+  }
+  body .main .be-immortal-page .overview .download, body .main .em-daybreak-page .overview .download {
+    margin-top: 138px;
+  }
+  body .main .be-immortal-page .overview .download .dl-head, body .main .em-daybreak-page .overview .download .dl-head {
+    font-size: 21px;
+  }
+  body .main .be-immortal-page .overview .download .os-list, body .main .em-daybreak-page .overview .download .os-list {
+    margin-top: 40px;
+  }
+  body .main .be-immortal-page .overview .download .os-list .os-item a, body .main .em-daybreak-page .overview .download .os-list .os-item a {
+    width: 120px;
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+body .main .em-daybreak-page .plan {
+  margin: 5vh 0 40vh 0;
+  font-size: 115px;
+  letter-spacing: 7.25px;
+}
+
+body .main .em-daybreak-page .plan .bp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body .main .em-daybreak-page .plan {
+    font-size: 42px;
+    text-align: center;
+    margin: 5vh 0;
+  }
+  body .main .em-daybreak-page .plan .num {
+    font-size: 91px;
+  }
+  body .main .em-daybreak-page .plan .bp {
+    display: inline;
+  }
+}
+
+@media (max-width: 375px) {
+  body .main .em-daybreak-page .plan {
+    font-size: 35px;
+    margin: 2vh 0;
+  }
+  body .main .em-daybreak-page .plan .num {
+    font-size: 56px;
+  }
+}
+
+body .footer .foot-main, body .footer .foot-immortal, body .footer .foot-em-daybreak {
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .footer .foot-main .contact, body .footer .foot-immortal .contact, body .footer .foot-em-daybreak .contact, body .footer .foot-main .header .be-immortal, body .header .footer .foot-main .be-immortal, body .footer .foot-immortal .header .be-immortal, body .header .footer .foot-immortal .be-immortal, body .footer .foot-em-daybreak .header .be-immortal, body .header .footer .foot-em-daybreak .be-immortal, body .footer .foot-main .header .em-daybreak, body .header .footer .foot-main .em-daybreak, body .footer .foot-immortal .header .em-daybreak, body .header .footer .foot-immortal .em-daybreak, body .footer .foot-em-daybreak .header .em-daybreak, body .header .footer .foot-em-daybreak .em-daybreak {
+  margin-bottom: 95px;
+}
+
+body .footer .foot-main .contact .contact-item, body .footer .foot-immortal .contact .contact-item, body .footer .foot-em-daybreak .contact .contact-item, body .footer .foot-main .header .be-immortal .contact-item, body .header .footer .foot-main .be-immortal .contact-item, body .footer .foot-immortal .header .be-immortal .contact-item, body .header .footer .foot-immortal .be-immortal .contact-item, body .footer .foot-em-daybreak .header .be-immortal .contact-item, body .header .footer .foot-em-daybreak .be-immortal .contact-item, body .footer .foot-main .header .em-daybreak .contact-item, body .header .footer .foot-main .em-daybreak .contact-item, body .footer .foot-immortal .header .em-daybreak .contact-item, body .header .footer .foot-immortal .em-daybreak .contact-item, body .footer .foot-em-daybreak .header .em-daybreak .contact-item, body .header .footer .foot-em-daybreak .em-daybreak .contact-item {
+  margin-right: 35px;
+  font-size: 40px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+body .footer .foot-main .contact .contact-item:last-of-type, body .footer .foot-immortal .contact .contact-item:last-of-type, body .footer .foot-em-daybreak .contact .contact-item:last-of-type, body .footer .foot-main .header .be-immortal .contact-item:last-of-type, body .header .footer .foot-main .be-immortal .contact-item:last-of-type, body .footer .foot-immortal .header .be-immortal .contact-item:last-of-type, body .header .footer .foot-immortal .be-immortal .contact-item:last-of-type, body .footer .foot-em-daybreak .header .be-immortal .contact-item:last-of-type, body .header .footer .foot-em-daybreak .be-immortal .contact-item:last-of-type, body .footer .foot-main .header .em-daybreak .contact-item:last-of-type, body .header .footer .foot-main .em-daybreak .contact-item:last-of-type, body .footer .foot-immortal .header .em-daybreak .contact-item:last-of-type, body .header .footer .foot-immortal .em-daybreak .contact-item:last-of-type, body .footer .foot-em-daybreak .header .em-daybreak .contact-item:last-of-type, body .header .footer .foot-em-daybreak .em-daybreak .contact-item:last-of-type {
+  margin-right: 0;
+}
+
+body .footer .foot-main .contact .contact-item:hover, body .footer .foot-immortal .contact .contact-item:hover, body .footer .foot-em-daybreak .contact .contact-item:hover, body .footer .foot-main .header .be-immortal .contact-item:hover, body .header .footer .foot-main .be-immortal .contact-item:hover, body .footer .foot-immortal .header .be-immortal .contact-item:hover, body .header .footer .foot-immortal .be-immortal .contact-item:hover, body .footer .foot-em-daybreak .header .be-immortal .contact-item:hover, body .header .footer .foot-em-daybreak .be-immortal .contact-item:hover, body .footer .foot-main .header .em-daybreak .contact-item:hover, body .header .footer .foot-main .em-daybreak .contact-item:hover, body .footer .foot-immortal .header .em-daybreak .contact-item:hover, body .header .footer .foot-immortal .em-daybreak .contact-item:hover, body .footer .foot-em-daybreak .header .em-daybreak .contact-item:hover, body .header .footer .foot-em-daybreak .em-daybreak .contact-item:hover {
+  color: #333333;
+}
+
+body .footer .foot-main .copylight, body .footer .foot-immortal .copylight, body .footer .foot-em-daybreak .copylight {
+  font-size: 21px;
+}
+
+@media (max-width: 768px) {
+  body .footer .foot-main, body .footer .foot-immortal, body .footer .foot-em-daybreak {
+    height: auto;
+  }
+  body .footer .foot-main .contact, body .footer .foot-immortal .contact, body .footer .foot-em-daybreak .contact, body .footer .foot-main .header .be-immortal, body .header .footer .foot-main .be-immortal, body .footer .foot-immortal .header .be-immortal, body .header .footer .foot-immortal .be-immortal, body .footer .foot-em-daybreak .header .be-immortal, body .header .footer .foot-em-daybreak .be-immortal, body .footer .foot-main .header .em-daybreak, body .header .footer .foot-main .em-daybreak, body .footer .foot-immortal .header .em-daybreak, body .header .footer .foot-immortal .em-daybreak, body .footer .foot-em-daybreak .header .em-daybreak, body .header .footer .foot-em-daybreak .em-daybreak {
+    margin-bottom: 28px;
+  }
+  body .footer .foot-main .contact .contact-item, body .footer .foot-immortal .contact .contact-item, body .footer .foot-em-daybreak .contact .contact-item, body .footer .foot-main .header .be-immortal .contact-item, body .header .footer .foot-main .be-immortal .contact-item, body .footer .foot-immortal .header .be-immortal .contact-item, body .header .footer .foot-immortal .be-immortal .contact-item, body .footer .foot-em-daybreak .header .be-immortal .contact-item, body .header .footer .foot-em-daybreak .be-immortal .contact-item, body .footer .foot-main .header .em-daybreak .contact-item, body .header .footer .foot-main .em-daybreak .contact-item, body .footer .foot-immortal .header .em-daybreak .contact-item, body .header .footer .foot-immortal .em-daybreak .contact-item, body .footer .foot-em-daybreak .header .em-daybreak .contact-item, body .header .footer .foot-em-daybreak .em-daybreak .contact-item {
+    margin-right: 44px;
+    font-size: 23px;
+  }
+  body .footer .foot-main .copylight, body .footer .foot-immortal .copylight, body .footer .foot-em-daybreak .copylight {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  body .footer .foot-main .contact, body .footer .foot-immortal .contact, body .footer .foot-em-daybreak .contact, body .footer .foot-main .header .be-immortal, body .header .footer .foot-main .be-immortal, body .footer .foot-immortal .header .be-immortal, body .header .footer .foot-immortal .be-immortal, body .footer .foot-em-daybreak .header .be-immortal, body .header .footer .foot-em-daybreak .be-immortal, body .footer .foot-main .header .em-daybreak, body .header .footer .foot-main .em-daybreak, body .footer .foot-immortal .header .em-daybreak, body .header .footer .foot-immortal .em-daybreak, body .footer .foot-em-daybreak .header .em-daybreak, body .header .footer .foot-em-daybreak .em-daybreak {
+    margin-bottom: 25px;
+  }
+}
+
+body .footer .foot-contact {
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  body .footer .foot-contact {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .footer .foot-contact .copylight {
+    font-size: 14px;
+  }
+}
+
+body .footer .foot-immortal .contact, body .footer .foot-em-daybreak .contact, body .footer .foot-immortal .header .be-immortal, body .header .footer .foot-immortal .be-immortal, body .footer .foot-em-daybreak .header .be-immortal, body .header .footer .foot-em-daybreak .be-immortal, body .footer .foot-immortal .header .em-daybreak, body .header .footer .foot-immortal .em-daybreak, body .footer .foot-em-daybreak .header .em-daybreak, body .header .footer .foot-em-daybreak .em-daybreak {
+  text-align: center;
+  margin-bottom: 98px;
+}
+
+body .footer .foot-immortal .contact .contact-item, body .footer .foot-em-daybreak .contact .contact-item, body .footer .foot-immortal .header .be-immortal .contact-item, body .header .footer .foot-immortal .be-immortal .contact-item, body .footer .foot-em-daybreak .header .be-immortal .contact-item, body .header .footer .foot-em-daybreak .be-immortal .contact-item, body .footer .foot-immortal .header .em-daybreak .contact-item, body .header .footer .foot-immortal .em-daybreak .contact-item, body .footer .foot-em-daybreak .header .em-daybreak .contact-item, body .header .footer .foot-em-daybreak .em-daybreak .contact-item {
+  margin-right: 40px;
+  font-size: 40px;
+  color: rgba(200, 200, 200, 0.6);
+}
+
+body .footer .foot-immortal .contact .contact-item:last-of-type, body .footer .foot-em-daybreak .contact .contact-item:last-of-type, body .footer .foot-immortal .header .be-immortal .contact-item:last-of-type, body .header .footer .foot-immortal .be-immortal .contact-item:last-of-type, body .footer .foot-em-daybreak .header .be-immortal .contact-item:last-of-type, body .header .footer .foot-em-daybreak .be-immortal .contact-item:last-of-type, body .footer .foot-immortal .header .em-daybreak .contact-item:last-of-type, body .header .footer .foot-immortal .em-daybreak .contact-item:last-of-type, body .footer .foot-em-daybreak .header .em-daybreak .contact-item:last-of-type, body .header .footer .foot-em-daybreak .em-daybreak .contact-item:last-of-type {
+  margin-right: 0;
+}
+
+body .footer .foot-immortal .contact .contact-item:hover, body .footer .foot-em-daybreak .contact .contact-item:hover, body .footer .foot-immortal .header .be-immortal .contact-item:hover, body .header .footer .foot-immortal .be-immortal .contact-item:hover, body .footer .foot-em-daybreak .header .be-immortal .contact-item:hover, body .header .footer .foot-em-daybreak .be-immortal .contact-item:hover, body .footer .foot-immortal .header .em-daybreak .contact-item:hover, body .header .footer .foot-immortal .em-daybreak .contact-item:hover, body .footer .foot-em-daybreak .header .em-daybreak .contact-item:hover, body .header .footer .foot-em-daybreak .em-daybreak .contact-item:hover {
+  color: #c8c8c8;
+}
+
+body .footer .foot-immortal .topic-path, body .footer .foot-em-daybreak .topic-path {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 131px;
+}
+
+@media (max-width: 768px) {
+  body .footer .foot-immortal, body .footer .foot-em-daybreak {
+    height: 430px;
+  }
+  body .footer .foot-immortal .contact, body .footer .foot-em-daybreak .contact, body .footer .foot-immortal .header .be-immortal, body .header .footer .foot-immortal .be-immortal, body .footer .foot-em-daybreak .header .be-immortal, body .header .footer .foot-em-daybreak .be-immortal, body .footer .foot-immortal .header .em-daybreak, body .header .footer .foot-immortal .em-daybreak, body .footer .foot-em-daybreak .header .em-daybreak, body .header .footer .foot-em-daybreak .em-daybreak {
+    margin-bottom: 30px;
+  }
+  body .footer .foot-immortal .contact .contact-item, body .footer .foot-em-daybreak .contact .contact-item, body .footer .foot-immortal .header .be-immortal .contact-item, body .header .footer .foot-immortal .be-immortal .contact-item, body .footer .foot-em-daybreak .header .be-immortal .contact-item, body .header .footer .foot-em-daybreak .be-immortal .contact-item, body .footer .foot-immortal .header .em-daybreak .contact-item, body .header .footer .foot-immortal .em-daybreak .contact-item, body .footer .foot-em-daybreak .header .em-daybreak .contact-item, body .header .footer .foot-em-daybreak .em-daybreak .contact-item {
+    margin-right: 44px;
+    font-size: 23px;
+  }
+  body .footer .foot-immortal .topic-path, body .footer .foot-em-daybreak .topic-path {
+    -ms-flex-item-align: inherit;
+        -ms-grid-row-align: inherit;
+        align-self: inherit;
+    margin-left: 0;
+    margin-bottom: 43px;
+  }
+}
+
+@media (max-width: 375px) {
+  body .footer .foot-immortal, body .footer .foot-em-daybreak {
+    height: 325px;
+  }
+}
+
+body .footer .foot-em-daybreak .topic-path .topic-list .topic-item a {
+  color: #f0f0f0;
+}
+/*# sourceMappingURL=style.css.map */

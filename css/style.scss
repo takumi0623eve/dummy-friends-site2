@@ -1,0 +1,1133 @@
+@charset 'UTF-8';
+
+$prs :960 / 1080;
+$tate :26 / 38;
+
+@mixin pad {
+    @media (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width:375px) {
+        @content;
+    }
+}
+
+
+
+
+
+
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,ol{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.contact-list{
+    .contact-item {
+        .adress {
+            font-size: 21px;
+            color: rgba($color: #333, $alpha: 0.6);
+            font-weight: bold;
+
+            .icon {
+                color: rgba($color: #333, $alpha: 1.0);
+                font-size: 32px;
+                margin-right: 32px;
+            }
+        }
+
+        &+.contact-item {
+            margin-top: 20px;
+        }
+    }
+}
+
+.img-container {
+    .hov {
+        position: relative;
+        display: block;
+
+        .image {
+            object-fit: cover;
+            display: block;
+        }
+
+        .cover-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: table;
+            transition: all ease-in 0.3s;
+
+            &:hover {
+                background-color: rgba($color: #000000, $alpha: 0.3);
+
+                p {
+                    transform: scale(1.05);
+                }
+            }
+
+            p {
+                display: table-cell;
+                vertical-align: middle;
+                color: #fff;
+                font-size: 95px;
+                transition: all ease-in 0.1s;
+                @include pad{
+                    font-size: 42px;
+                }
+                @include sp{
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
+
+.download {
+    margin-top: 59px;
+
+    .dl-head {
+        font-size: 28px;
+        letter-spacing: 2.24px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .os-list {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+
+        .os-item {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 190px;
+                height: 67px;
+                border: 3px solid #333;
+                font-size: 25px;
+                font-weight: bold;
+                letter-spacing: 1.25px;
+
+                &:hover {
+                    background-color: #333;
+                    color: #fff;
+                }
+            }
+
+            margin-right: 63px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+            @include pad{
+                margin-right: 98px;
+
+                &+.os-item {
+                    margin-right: 0;
+                }
+            }
+            @include sp{
+                margin-right: 37px;
+
+                &+.os-item {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.topic-path {
+    .topic-list {
+        display: flex;
+
+        .topic-item {
+            a {
+                font-size: 21px;
+                color: #707070;
+                opacity: 0.6;
+
+                &:hover {
+                    opacity: 1;
+                }
+                @include pad{
+                    font-size: 14px;
+                }
+            }
+
+            &+.topic-item {
+                &::before {
+                    content: '>';
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 16px;
+                    width: 28px;
+                    @include pad{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &:last-of-type a {
+                cursor: initial;
+                opacity: 1;
+                color: inherit;
+            }
+        }
+    }
+}
+
+.copylight {
+    text-align: center;
+    font-size: 21px;
+}
+
+body {
+    font-family: 'Noto Sans JP',
+    sans-serif;
+
+    margin: 0;
+    color: #333;
+    @include pad{
+        padding: 0;
+    }
+    @include sp{
+        padding: 0;
+    }
+    #page_top{
+        position: fixed;
+        bottom: 70px;
+        right: 15%;
+        a{
+            font-size: 100px;
+            opacity: 0.4;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        @include pad{
+            a{
+                font-size: 0;
+            }
+        }
+    }
+    .home-wrapper{
+        padding: 38px 20% 0;
+        @include pad{
+            padding: 42px 10% 0;
+        }
+        @include sp{
+            padding: 27px 7.5% 0;
+        }
+    }
+    .contact-wrapper{
+        padding: 42px 25% 0;
+        @include pad{
+            padding: 32px 10% 0;
+        }
+        @include sp{
+            padding: 19px 7.5% 0;
+        }
+    }
+    .be-immortal-wrapper{
+        padding: 42px 20% 0;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        color: #f0f0f0;
+        @include pad{
+            padding : 32px 10% 0;
+        }
+        @include sp{
+            padding : 19px 7.5% 0;
+        }
+    }
+    .em-daybreak-wrapper{
+        @extend .be-immortal-wrapper;
+        background: transparent linear-gradient(180deg, #1928A0 0%, #ED3A1A 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .header{
+        .head{
+            .title{
+                font-size: 63px;
+                letter-spacing: 12.6px;
+                margin: 0;
+                font-weight: normal;
+            }
+            .nav{
+                .nav-list{
+                    margin-top: 20px;
+                    display: flex;
+                    font-weight: bold;
+                    .nav-item{
+                        font-size: 28px;
+                        margin-right: 61px;
+                        opacity: 0.5;
+                        &:last-of-type{
+                            margin-right: 0;
+                        }
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            @include pad {
+                .title {
+                    font-size: 35px;
+                    letter-spacing: 7px;
+                }
+                .nav{
+                    .nav-list{
+                        margin-top: 31px;
+                        .nav-item{
+                            font-size: 21px;
+                            margin-right: 39px;
+                        }
+                    }
+                }
+            }
+            @include sp{
+                .title{
+                    font-size: 21px;
+                    letter-spacing: 4.2px;
+                }
+                .nav{
+                    .nav-list{
+                        margin-top: 22px;
+                        .nav-item{
+                            font-size: 14px;
+                            margin-right: 36px;
+                        }
+                    }
+                }
+            }
+        }
+        .contact{
+            .title{
+                font-size: 21px;
+                letter-spacing: 4.2px;
+                opacity: 0.6;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .sub-title{
+                font-size: 63px;
+                letter-spacing: 3.15px;
+                font-weight: bold;
+                margin-top: 22px;
+                margin-bottom: 54px;
+            }
+            @include pad{
+                .title{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                .sub-title{
+                    font-size: 42px;
+                    margin-top: 52px;
+                    margin-bottom: 0;
+                }
+                .contact-list{
+                    height: 287px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .contact-item{
+                        .adress{
+                            .icon{
+                                font-size: 17px;
+                            }
+                        }
+                        & + .contact-item{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            @include sp{
+                .title{
+                    font-size: 21px;
+                }
+                .sub-title{
+                    font-size: 28px;
+                    margin-top: 29px;
+                }
+                .contact-list{
+                    height: 184px;
+                    .contact-item{
+                        .adress{
+                            font-size: 14px;
+                            .icon{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .be-immortal{
+            @extend .contact;
+            margin: 0 7%;
+            .title{
+                display: inline-block;
+            }
+            .nav-list{
+                @extend .sub-title;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0;
+                .sub-title{
+                    margin-bottom: 0;
+                }
+                .works-list{
+                    display: flex;
+                    .work-item{
+                        a{
+                            font-size: 21px;
+                            padding: 0 10px;
+                            opacity: 0.4;
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                        & + .work-item{
+                            margin-left: 40px;
+                        }
+                    }
+                    .active a{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        @include pad{
+            .be-immortal{
+                margin: 0;
+                text-align: center;
+                .title{
+                    font-size: 35px;
+                }
+                .nav-list{
+                    display: block;
+                    .sub-title{
+                        text-align: left;
+                        margin-top: 49px;
+                        font-size: 42px;
+                    }
+                    .works-list{
+                        justify-content: center;
+                        margin-top: 52px;
+                        .work-item{
+                            a{
+                                line-height: auto;
+                            }
+                            & + .works-item{
+                                margin-left: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include sp{
+            .be-immortal{
+                .title{
+                    font-size: 21px;
+                }
+                .nav-list{
+                    .sub-title{
+                        margin-top: 29px;
+                        font-size: 28px;
+                    }
+                    .works-list{
+                        margin-top: 33px;
+                        .work-item{
+                            a{
+                                font-size: 14px;
+                                font-weight: normal;
+                            }
+                            & + .work-item{
+                                margin-left: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .em-daybreak{
+            @extend .be-immortal;
+        }
+    }
+
+    .main{
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 778px;
+            .top-title {
+                margin: 0;
+                font-size: 70px;
+                letter-spacing: 21px;
+            }
+        }
+        .container{
+            .be-immortal{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 376px;
+                .description{
+                    margin: auto 131px;
+                    .game-title{
+                        font-size: 49px;
+                        letter-spacing: 3.92px;
+                        margin: 0;
+                        margin-top: 63px;
+                    }
+                    .game-lead{
+                        font-size: 21px;
+                        /* letter-spacing: 1.03px*$prs; */
+                        color: #707070;
+                        margin: 0;
+                        margin-top: 14px;
+                    }
+                    .more{
+                        float: right;
+                        a{
+                            @extend .game-lead;
+                            color: #333;
+                            font-weight: bold;
+                            padding: 11px 17px;
+                            position: relative;
+                            &:hover{
+                                transition: all linear 0.1s;
+                                color: #fff;
+                                &::before{
+                                    transition: width ease-in-out 0.3s;
+                                    width: 100%;
+                                }
+                            }
+                            &::before{
+                                content: '';
+                                display: block;
+                                width: 0%;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                                background-color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+            .em-daybreak{
+                @extend .be-immortal;
+                margin-bottom: 0;
+                .hov{
+                    .grd {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: transparent linear-gradient(61deg, #A34014 0%, #330C8D 100%) 0% 0% no-repeat padding-box;
+                    }
+                }
+            }
+        }
+
+        @include pad {
+            .top {
+                height: 868px;
+                .top-title {
+                    font-size: 77px;
+                    letter-spacing: 23px;
+                    font-weight: normal;
+                    margin-left: 62px;
+                    .ui{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .container{
+                .be-immortal{
+                    margin-bottom: 300px;
+                    .description{
+                        margin: auto 8%;
+                        .game-title{
+                            font-size: 35px;
+                            letter-spacing: 1.72px;
+                        }
+                        .game-lead{
+                            letter-spacing: 0.59px;
+                        }
+                        .more {
+                            a{
+                                letter-spacing: 1.03px;
+                            }
+                        }
+                    }
+                    .download{
+                        .dl-head{
+                            font-size: 28px;
+                        }
+                        .os-list{
+                            margin-top: 28px;
+                            .os-item{
+                                a{
+                                    width: 148px;
+                                    height: 54px;
+                                    font-size: 21px;
+                                    letter-spacing: 1.05px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include sp {
+            .top {
+                height: 570px;
+                .top-title {
+                    font-size: 40px;
+                    letter-spacing: 14.7px;
+                    margin-left: 26px;
+                }
+            }
+            .container{
+                .be-immortal {
+                    margin-bottom: 190px;
+
+                    .description {
+
+                        .game-title {
+                            margin-top: 25px;
+                            font-size: 28px;
+                            letter-spacing: 1.37px;
+                        }
+
+                        .game-lead {
+                            font-size: 14px;
+                            letter-spacing: 0.39px;
+                        }
+
+                        .more {
+                            a {
+                                letter-spacing: 0.69px;
+                            }
+                        }
+                    }
+
+                    .download {
+                        .dl-head {
+                            font-size: 14px;
+                        }
+
+                        .os-list {
+                            margin-top: 21px;
+
+                            .os-item {
+                                a {
+                                    width: 120px;
+                                    height: 44px;
+                                    font-size: 14px;
+                                    letter-spacing: 0.7px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-page{
+            padding-top: 140px;
+            .designer{
+                height: 297px;
+                display: flex;
+                .pos{
+                    width: 273px;
+                    font-size: 28px;
+                    letter-spacing: 1.37px;
+                    margin: 0;
+                }
+                .info{
+                    .name{
+                        font-size: 28px;
+                        letter-spacing: 1.37px;
+                        margin: 0;
+                    }
+                    .adress-container {
+                        height: 80%;
+                        display: table;
+                        .contact-list{
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            .programmer{
+                @extend .designer;
+            }
+        }
+        @include pad{
+            .contact-page{
+                padding-top: 0;
+                .designer{
+                    display: block;
+                    height: auto;
+                    .pos{
+                        margin-bottom: 7px;
+                        font-weight: normal;
+                    }
+                    .info{
+                        height: 330px;
+                        .name{
+                            font-size: 35px;
+                            font-weight: normal;
+                        }
+                        .adress-container{
+                            height: 80%;
+                            margin: 0 auto;
+                            .contact-list{
+                                .contact-item{
+                                    .adress{
+                                        .icon{
+                                            font-size: 17px;
+                                            margin-right: 17px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include sp{
+            .contact-page{
+                .designer{
+                    .pos{
+                        margin-bottom: 8px;
+                        font-size: 14px;
+                    }
+                    .info{
+                        height: 182px;
+                        .name{
+                            font-size: 21px;
+                        }
+                        .adress-container{
+                            .contact-list{
+                                .contact-item{
+                                    .adress{
+                                        font-size: 14px;
+                                        .icon{
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .be-immortal-page{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .work-title{
+                font-size: 49px;
+                letter-spacing: 3.92px;
+            }
+            .description{
+                .sub-title{
+                    font-size: 63px;
+                    letter-spacing: 5.04px;
+                }
+                p{
+                    font-size: 21px;
+                    letter-spacing: 1.03px;
+                    color: #C8C8C8;
+                    font-weight: normal;
+                    & + p{
+                        margin-top: 34.5px;
+                    }
+                }
+            }
+            .overview{
+                color: #C8C8C8;
+                display: block;
+                width: 100%;
+                .ov-list{
+                    display: block;
+                    text-align: center;
+                    .ov-item{
+                        display: inline-block;
+                        width: 15%;
+                        .type{
+                            font-size: 14px;
+                            letter-spacing: 1.12px;
+                        }
+                        .icon{
+                            height: 40px;
+                            .p{
+                                display: block;
+                                font-size: 40px;
+                                line-height: 40px;
+                                margin-top:0;
+                            }
+                        }
+                        & + .ov-item{
+                            .icon{
+                                border-left: 1px solid #f0f0f0;
+                            }
+                        }
+                    }
+                }
+                .download{
+                    color: #f0f0f0f0;
+                    .os-list{
+                        .os-item{
+                            a{
+                                border: 3px solid #f0f0f0;
+                                &:hover{
+                                    color: #333;
+                                    background-color: #f0f0f0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include pad{
+            .be-immortal-page{
+                .work-title {
+                    margin-top: 154px;
+                    margin-bottom: 40px;
+                    font-size: 42px;
+                }
+                .description{
+                    .sub-title{
+                        margin-top: 150px;
+                        margin-bottom: 82px;
+                        font-size: 42px;
+                        font-weight: normal;
+                    }
+                    p{
+                        font-size: 21px;
+                        font-weight: lighter;
+                        & + p{
+                            margin-top: 34px;
+                        }
+                    }
+                }
+                .overview{
+                    margin-top: 154px;
+                    .ov-list{
+                        .ov-item{
+                            width: 18.5%;
+                            .type{
+                                white-space: nowrap;
+                            }
+                            .icon{
+                                height: 45px;
+                                .p{
+                                    font-size: 42px;
+                                    line-height: 45px;
+                                }
+                            }
+                        }
+                    }
+                    .download{
+                        margin-top: 155px;
+                        .os-list{
+                            margin-top: 28px;
+                            .os-item{
+                                a{
+                                    width: 148px;
+                                    height: 54px;
+                                    font-size: 21px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include sp{
+            .be-immortal-page{
+                .work-title{
+                    margin-top: 112px;
+                    margin-bottom: 34px;
+                    font-size: 28px;
+                    font-weight: normal;
+                }
+                .description{
+                    .sub-title{
+                        margin-top: 75px;
+                        margin-bottom: 33px;
+                        font-size: 26px;
+                        letter-spacing: 2.08px;
+                    }
+                    p{
+                        font-size: 14px;
+                        & + p{
+                            margin-top: 21px;
+                        }
+                    }
+                }
+                .overview{
+                    margin-top: 136px;
+                    .ov-list{
+                        display: block;
+                        .ov-item{
+                            display: inline-block;
+                            width: 30%;
+                            &:nth-of-type(4),&:nth-of-type(5){
+                                width: 40%;
+                            }
+                            &:nth-of-type(4){
+                                .icon{
+                                    border-left: none;
+                                }
+                            }
+                            .icon{
+                                height: 50px;
+                                .p{
+                                    line-height: 50px;
+                                }
+                            }
+                        }
+                    }
+                    .download{
+                        margin-top: 138px;
+                        .dl-head{
+                            font-size: 21px;
+                        }
+                        .os-list{
+                            margin-top: 40px;
+                            .os-item{
+                                a{
+                                    width: 120px;
+                                    height: 44px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .em-daybreak-page{
+            @extend .be-immortal-page;
+            .plan{
+                margin: 5vh 0 40vh 0;
+                font-size: 115px;
+                letter-spacing: 7.25px;
+                .bp{
+                    display: none;
+                }
+            }
+        }
+        @include pad{
+            .em-daybreak-page{
+                .plan {
+                    font-size: 42px;
+                    text-align: center;
+                    margin: 5vh 0;
+
+                    .num {
+                        font-size: 91px;
+                    }
+
+                    .bp {
+                        display: inline;
+                    }
+                }
+            }
+        }
+        @include sp{
+            .em-daybreak-page{
+                .plan{
+                    font-size: 35px;
+                    margin: 2vh 0;
+                    .num{
+                        font-size: 56px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        .foot-main{
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .contact {
+                margin-bottom: 95px;
+
+                .contact-item {
+                    margin-right: 35px;
+                    font-size: 40px;
+                    color: rgba($color: #333, $alpha: 0.6);
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        color: rgba($color: #333, $alpha: 1.0);
+                    }
+                }
+            }
+            .copylight{
+                font-size: 21px;
+            }
+        }
+        @include pad{
+            .foot-main{
+                height: auto;
+                .contact{
+                    margin-bottom: 28px;
+                    .contact-item{
+                        margin-right: 44px;
+                        font-size: 23px;
+                    }
+                }
+                .copylight{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @include sp{
+            .foot-main{
+                .contact{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        .foot-contact{
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        @include pad{
+            .foot-contact{
+                align-items: center;
+                .copylight{
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+
+        .foot-immortal{
+            @extend .foot-main;
+            .contact {
+                text-align: center;
+                margin-bottom: 98px;
+
+                .contact-item {
+                    margin-right: 40px;
+                    font-size: 40px;
+                    color: rgba($color: #c8c8c8, $alpha: 0.6);
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        color: rgba($color: #c8c8c8, $alpha: 1.0);
+                    }
+                }
+            }
+            .topic-path{
+                align-self: flex-start;
+                margin-left: 131px;
+            }
+        }
+
+        @include pad{
+            .foot-immortal{
+                height: 430px;
+                .contact{
+                    margin-bottom: 30px;
+                    .contact-item{
+                        margin-right: 44px;
+                        font-size: 23px;
+                    }
+                }
+                .topic-path {
+                    align-self: inherit;
+                    margin-left: 0;
+                    margin-bottom: 43px;
+                }
+            }
+        }
+
+        @include sp{
+            .foot-immortal{
+                height: 325px;
+            }
+        }
+
+        .foot-em-daybreak{
+            @extend .foot-immortal;
+            .topic-path{
+                .topic-list{
+                    .topic-item a{
+                        color: #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+}
